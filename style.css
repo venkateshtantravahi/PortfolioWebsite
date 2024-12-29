@@ -344,14 +344,14 @@ section {
 .about-containers {
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .about-details-container {
   flex: 2; /* Allocate more space for details */
   display: flex;
   flex-direction: column;
-  gap: 1.5rem; /* Add spacing between sections */
+  gap: 1rem; /* Add spacing between sections */
 }
 
 /* .about-containers,
