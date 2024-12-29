@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Venkatesh Tantravahi</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Venkatesh Tantravahi</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#education" onclick="toggleMenu()">education</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <!-- <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="profile picture" />
+      </div> -->
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Venkatesh Tantravahi</h1>
+        <p class="section__text__p2">Software Engineer & AI Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/files/resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-2" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <a 
+            href="https://www.linkedin.com/in/venkateshtantravahi/" 
+            target="_blank" 
+            rel="noopener noreferrer">
+            <img
+              src="./assets/icons/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+            />
+          </a>
+          <a
+            href="https://medium.com/@vtantravahi"
+            target="_blank"
+            rel="noopener noreferrer">
+            <img
+              src="./assets/icons/medium.png"
+              alt="My Medium profile"
+              class="icon"
+            />
+          </a>
+          <a
+            href="https://github.com/venkateshtantravahi"
+            target="_blank"
+            rel="noopener noreferrer">
+          <img
+            src="./assets/icons/github.png"
+            alt="My Github profile"
+            class="icon"
+          />
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <!-- <div class="section__pic-container">
+          <img
+            src="./assets/profile-pic-2.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div> -->
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/icons/experience.png"
+                alt="Experience icon"
+                class="icon"
+                onclick="location.href='./#experience'"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Software and AI Engineering</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/icons/education.png"
+                alt="Education icon"
+                class="icon"
+                onclick="location.href='./#education'"
+              />
+              <h3>Education</h3>
+              <p>B.Tech. in EE<br />M.Sc. in CS</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hi there! I'm <strong>Venkatesh Tantravahi</strong>, a tech enthusiast who cut his teeth in the trenches of development 
+              before AI like GPT came along to steal the show (and sometimes debug our code). Back in the day, when autocomplete was 
+              just a dream and Stack Overflow was our lifeline, I built my expertise brick by brick, creating robust solutions for 
+              real-world problems.
+            </p>
+            <h2>What I’ve Done</h2>
+            <ul>
+              <li>
+                <strong>Optimized enterprise-level solutions</strong> at Capgemini, reducing inefficiencies and delivering 
+                data-driven insights.
+              </li>
+              <li>
+                Built <strong>machine learning pipelines</strong> that didn’t just recognize faces but did so with 7% higher accuracy. 
+                No imposters here!
+              </li>
+              <li>
+                Delivered <strong>beautifully chaotic full-stack applications</strong> that make both users and databases smile.
+              </li>
+            </ul>
+            <p>
+              I thrive on making complex ideas simple, whether it’s creating a <strong>SQLite playground</strong> to visualize 
+              queries or helping machines predict whether it’ll rain in Australia (it’s complicated, trust me).
+            </p>
+            <h2>Let’s Connect</h2>
+            <p>
+              Here, you’ll find a showcase of my journey, complete with passion projects, professional milestones, and a sprinkle of 
+              humor to keep things lively. So, grab a cup of chai (South Indian style, if you’re feeling fancy) and dive into my 
+              world of code, creativity, and caffeinated problem-solving. Let’s connect and build something amazing together — 
+              preferably before GPT-5 makes us obsolete! 😊
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/icons/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">My Career Journey</p>
+      <h1 class="title">Experience</h1>
+      <div class="timeline-container">
+        <!-- Experience 1 -->
+        <div class="timeline-item">
+          <div class="timeline-content" data-aos="fade-up">
+            <h2>Medium</h2>
+            <h3>Hobby Technical Writer</h3>
+            <p>
+              • Writing engaging articles on complex computing topics for a broad audience.<br />
+              • Simplifying technology concepts to empower readers in a digital world.<br />
+              • Crafting content that bridges technical knowledge with accessibility.
+            </p>
+            <div class="tech-stack">
+              <strong>Skills:</strong> Research Interest, Able to Present things understandable, Writing, Editing.
+            </div>
+            <span class="timeline-date"> Mar 2022 - Present</span>
+          </div>
+        </div>
+        <!-- Experience 2 -->
+        <div class="timeline-item">
+          <div class="timeline-content" data-aos="fade-up">
+            <h2>Capgemini</h2>
+            <h3>Software Engineer</h3>
+            <p>
+              • Streamlined business processes by building RICEF components using SAP ABAP and HANA DB.<br />
+              • Leveraged Power BI and Azure ML for actionable insights and data visualization.<br />
+              • Improved team efficiency by 25% through Agile practices and knowledge transfer sessions.
+            </p>
+            <div class="tech-stack">
+              <strong>Technologies:</strong> SAP ABAP, HANA DB, Power BI, Azure ML, SQL, JIRA, Git
+            </div>
+            <span class="timeline-date">Jun 2021 - Dec 2022</span>
+          </div>
+        </div>
+    
+        <!-- Experience 3 -->
+        <div class="timeline-item">
+          <div class="timeline-content" data-aos="fade-up">
+            <h2>Jukshio</h2>
+            <h3>ML Research Engineer</h3>
+            <p>
+              • Developed and optimized facial recognition models using TensorFlow and OpenCV.<br />
+              • Achieved 7% accuracy improvement through advanced data analysis and pipeline optimization.<br />
+              • Implemented AI-driven solutions, contributing to the startup's rapid growth.
+            </p>
+            <div class="tech-stack">
+              <strong>Technologies:</strong> Python, TensorFlow, OpenCV, Pandas, MongoDB, CI/CD, REST APIs
+            </div>
+            <span class="timeline-date">Jul 2020 - Jun 2021</span>
+          </div>
+        </div>
+    
+        <!-- Experience 4 -->
+        <div class="timeline-item">
+          <div class="timeline-content" data-aos="fade-up">
+            <h2>3IceCubes</h2>
+            <h3>Full-Stack Developer Intern</h3>
+            <p>
+              • Designed and developed a responsive web application with MySQL and JavaScript.<br />
+              • Created dynamic UI components using HTML, CSS, and Bootstrap.<br />
+              • Integrated Python back-end logic for efficient handling of complex functionalities.
+            </p>
+            <div class="tech-stack">
+              <strong>Technologies:</strong> MySQL, JavaScript, HTML, CSS, Python, Git, Bootstrap
+            </div>
+            <span class="timeline-date">May 2020 - Aug 2020</span>
+          </div>
+        </div>
+    
+        <!-- Experience 5 -->
+        <div class="timeline-item">
+          <div class="timeline-content" data-aos="fade-up">
+            <h2>NTECL</h2>
+            <h3>Student Intern</h3>
+            <p>
+              • Performed power system simulations using MATLAB to analyze stability.<br />
+              • Automated data collection processes using Python scripts, improving monitoring efficiency.<br />
+              • Gained hands-on experience with high-voltage equipment and turbines.
+            </p>
+            <div class="tech-stack">
+              <strong>Technologies:</strong> MATLAB, Python, Power Systems, Electrical Engineering
+            </div>
+            <span class="timeline-date">Jun 2019 - Aug 2019</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="education">
+      <p class="section__text__p1">Discover My</p>
+      <h1 class="title">Education</h1>
+      <div class="education-container">
+        <!-- Degree 1 -->
+        <div class="education-row">
+          <h2 class="education-title">Master of Science in Computer Science</h2>
+          <p class="education-institute">State University of New York, Utica-NY</p>
+          <p class="education-duration">Jan 2023 - Dec 2024</p>
+          <p class="education-details">
+            Relevant Courses: Database Systems, Advanced Algorithms, Operating Systems, Data Engineering, Machine Learning, Artificial Intelligence
+          </p>
+        </div>
+        <!-- Degree 2 -->
+        <div class="education-row">
+          <h2 class="education-title">Bachelor of Technology in Electrical & Electronics</h2>
+          <p class="education-institute">Mahatma Gandhi Institute of Technology, Hyderabad, India</p>
+          <p class="education-duration">Aug 2016 - May 2020</p>
+          <p class="education-details">
+            Relevant Courses: Computer Programming, Digital Electronics, Power Electronics, Data Structures & Algorithms
+          </p>
+        </div>
+      </div>
+    </section>    
+    <section id="projects">
+      <p class="section__text__p1">Browse Some of my</p>
+      <h1 class="title">Thesis & Projects</h1>
+      <div class="projects-container">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <img
+            src="./assets/projects/project-1.png"
+            alt="Edge Computing Project"
+            class="project-img"
+          />
+          <h2 class="project-title">The Edge of Innovation: AI and Edge Computing</h2>
+          <p>
+            A Case Study Exploring the challenges of hardware limitations and showcased advancements in NPUs and TPUs for AI scalability.
+          </p>
+          <div class="tech-stack">
+            <strong>Technologies:</strong> Neural Networks, AI, TPUs, NPUs, Data Analysis, Edge Computing Techniques
+          </div>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('./assets/files/CaseStudy.pdf')"
+            >
+              Case Study
+            </button>
+          </div>
+        </div>
+    
+        <!-- Project 2 -->
+        <div class="project-card">
+          <img
+            src="./assets/projects/project-2.jpeg"
+            alt="SQLite Playground"
+            class="project-img"
+          />
+          <h2 class="project-title">SQLite Playground</h2>
+          <p>
+            Developed a user-friendly SQL editor with syntax highlighting and visualization tools for database exploration.
+          </p>
+          <div class="tech-stack">
+            <strong>Technologies:</strong> Streamlit, SQLite, Python, CI/CD Pipeline
+          </div>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/venkateshtantravahi/SqlitePlaygroundApp', '_blank')"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://sqlitplayground.streamlit.app/', '_blank')"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+    
+        <!-- Project 3 -->
+        <div class="project-card">
+          <img
+            src="./assets/projects/project-3.jpg"
+            alt="Music Popularity Analysis"
+            class="project-img"
+          />
+          <h2 class="project-title">BeatStats: Music Popularity Analysis</h2>
+          <p>
+            Used advanced analytics to uncover patterns in musical attributes and their impact on track success.
+          </p>
+          <div class="tech-stack">
+            <strong>Technologies:</strong> Pandas, Python, Data Visualization, Plotly
+          </div>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://gist.github.com/venkateshtantravahi/f0b5ab65b3043241f521648bd86e7791','_blank')"
+            >
+              Github
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <img
+            src="./assets/projects/project-4.webp"
+            alt="E-Commerce Strategy"
+            class="project-img"
+          />
+          <h2 class="project-title">E-Commerce Strategy for Adidas & Nike</h2>
+          <p>
+            Conducted predictive analytics to optimize inventory and promotional strategies, boosting online presence and revenue.
+          </p>
+          <div class="tech-stack">
+            <strong>Technologies:</strong> Python, SQL, Data Analysis
+          </div>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://vtantravahi.medium.com/optimizing-online-sports-retail-revenue-b1cdb4cf2d7c', '_blank')"
+            >
+              Article
+            </button>
+          </div>
+        </div>
+    
+        <!-- Project 5 -->
+        <div class="project-card">
+          <img
+            src="./assets/projects/project-5.jpg"
+            alt="Streaming Service Recommender"
+            class="project-img"
+          />
+          <h2 class="project-title">Streaming Service Recommender</h2>
+          <p>
+            Built a real-time recommender system using Redis and Flask to predict user preferences based on collaborative filtering.
+          </p>
+          <div class="tech-stack">
+            <strong>Technologies:</strong> Redis, Flask, Python, In-Memory Databases
+          </div>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/venkateshtantravahi/StreamingServiceRecommendation'"
+            >
+              Github
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card">
+          <img
+            src="./assets/projects/project-6.jpeg"
+            alt="Streaming Service Recommender"
+            class="project-img"
+          />
+          <h2 class="project-title">Extending Forward Forward Algorithm</h2>
+          <p>
+            Implemented and Extended the research on forward-forward algorithm by experimenting with complex dataset
+            and different activations to explore an alternative method of learning in neural networks compared to backpropagation.
+          </p>
+          <div class="tech-stack">
+            <strong>Technologies:</strong> Python, Tensorflow, Pytorch, AI, Research.
+          </div>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/venkateshtantravahi/ForwardForwardAlgorithm/', '_blank')"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('./assets/files/CaseStudyFF.pdf', '_blank')"
+            >
+              Report
+            </button>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/icons/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:vtantravahi@gmail.com">vtantravahi@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/icons/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/venkateshtantravahi/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; <span id="year"></span> Venkatesh Tantravahi. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
