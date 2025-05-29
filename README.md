@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio website!
 
-This portfolio is a showcase of my work as a **Data Scientist**, **Analyst**, and **Full-Stack Engineer**. It includes my professional experience, certifications, projects, blog posts, and contact information—all in a modern, responsive design.
+This portfolio is a showcase of my work as a **Data Scientist** & **Analyst**. It includes my professional experience, certifications, projects, blog posts, and contact information—all in a modern, responsive design.
 
 ---
 
@@ -27,7 +27,7 @@ This portfolio is a showcase of my work as a **Data Scientist**, **Analyst**, an
 
 ## Live Demo
 
- [Check it out here](https://your-deployed-site.netlify.app)
+ [Check it out here](https://venkateshtantravahi.netlify.app)
 
 ---
 
@@ -36,7 +36,7 @@ This portfolio is a showcase of my work as a **Data Scientist**, **Analyst**, an
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/venkateshtantravahi/PortfolioWebsite.git
 cd your-repo-name
 ```
 
